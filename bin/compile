@@ -1,8 +1,6 @@
 #!/bin/sh
 
 echo "-----> Installing heroku buildpack p7zip"
-mkdir -p "UX"
-
 BUILD_DIR=$1
 mkdir -p "$BUILD_DIR/UX"
 wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "$BUILD_DIR/UX/alpha.zip"
