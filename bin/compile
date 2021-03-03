@@ -5,7 +5,5 @@ mkdir -p "UX"
 
 wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "UX/alpha.zip"
 
-cd UX
-
 unzip UX/alpha.zip
 echo "-----> Done."
