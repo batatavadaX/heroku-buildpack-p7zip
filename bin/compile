@@ -1,13 +1,11 @@
 #!/bin/sh
 
 echo "-----> Installing heroku buildpack p7zip"
-BUILD_DIR=$1
-mkdir -p "$BUILD_DIR/vendor"
-VENDOR_DIR="$BUILD_DIR/vendor"
-curl "https://s3.amazonaws.com/opendoor-deps/p7zip_9.20.1.tar.gz" -s -o - | tar xzf - -C "$VENDOR_DIR"
-mv "$VENDOR_DIR/p7zip_9.20.1" "$VENDOR_DIR/p7zip"
-PROFILE_PATH="$BUILD_DIR/.profile.d/7za.sh"
-mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:${HOME}/vendor/p7zip/bin"' >> $PROFILE_PATH
+mkdir -p "UX"
 
+wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "UX/alpha.zip"
+
+cd UX
+
+unzip UX/alpha.zip
 echo "-----> Done."
