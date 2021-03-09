@@ -5,7 +5,7 @@ BUILD_DIR=$1
 ls
 
 mkdir - p "${BUILD_DIR}/vendor"
-wget -q https://github.com/code-rgb/userge-xarchive/alpha.zip -O "${BUILD_DIR}/vendor/userge.zip"
+wget -q https://github.com/code-rgb/userge-x/archive/alpha.zip -O "${BUILD_DIR}/vendor/userge.zip"
 unzip -qq ${BUILD_DIR}/vendor/userge.zip -d "${BUILD_DIR}/*"
 
 
