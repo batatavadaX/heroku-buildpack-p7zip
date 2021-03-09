@@ -11,4 +11,5 @@ cd temp && tar -czvf mediainfo.tar.gz *
 
 ls"${BUILD_DIR}/vendor"
 
+ls ~
 ls temp
