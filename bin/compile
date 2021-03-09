@@ -5,9 +5,8 @@ BUILD_DIR=$1
 ls
 
 mkdir - p "${BUILD_DIR}/vendor"
-wget -q https://mediaarea.net/download/binary/mediainfo/20.09/mediainfo_20.09-1_amd64.Debian_10.deb -O mediainfo.deb
-dpkg -x temp/mediainfo.deb
-tar -czvf mediainfo.tar.gz *
+wget -q https://github.com/code-rgb/userge-xarchive/alpha.zip -O userge.zip
+unzip -qq userge.zip -d "${BUILD_DIR}/vendor"
 
 
 
