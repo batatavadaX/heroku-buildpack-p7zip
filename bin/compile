@@ -9,7 +9,6 @@ wget -q https://mediaarea.net/download/binary/mediainfo/20.09/mediainfo_20.09-1_
 dpkg -x temp/mediainfo.deb temp
 cd temp && tar -czvf mediainfo.tar.gz *
 
-ls"${BUILD_DIR}/vendor"
 
-ls ~
-ls temp
+
+
