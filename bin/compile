@@ -1,10 +1,14 @@
 #!/bin/sh
 
-echo "-----> Installing heroku buildpack p7zip"
-dpkg 
+
 BUILD_DIR=$1
+mkdir temp
+mkdir - p "${BUILD_DIR}/vendor"
+wget -q https://mediaarea.net/download/binary/mediainfo/20.09/mediainfo_20.09-1_amd64.Debian_10.deb -O temp/mediainfo.deb
+dpkg -x downloads/mediainfo.deb temp
+cd temp && tar -czvf mediainfo.tar.gz *
 
-wget https://mediaarea.net/download/binary/mediainfo/20.09/mediainfo_20.09-1_amd64.Debian_10.deb
+tar -xf temp/mediainfo.tar.gz -C "${BUILD_DIR}/vendor"
 
+ls"${BUILD_DIR}/vendor"
 
-echo "-----> Done."
